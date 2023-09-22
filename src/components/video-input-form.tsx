@@ -128,7 +128,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
         className="relative border flex rounded-md aspect-video cursor-pointer border-dashed text-sm flex-col gap-2 items-center justify-center text-muted-foreground hover:bg-primary/5"
       >
         {previewURL ? (
-          <video src={previewURL} controls={false} className="pointer-events-none absolute inset-0" />
+          <video src={previewURL} controls={false} className="pointer-events-none absolute inset-0 w-full h-full" />
         ) : (
           <>
             <FileVideo className="w-4 h-4" />
